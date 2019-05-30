@@ -1,0 +1,17 @@
+version: '3.7'
+
+services: 
+  preprocessing-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: preprocessing
+    ports:
+      - 9015:9015
+    container_name: preprocessing
+    hostname: preprocessing
+
+networks:
+  default:
+    external:
+      name: smartheating
