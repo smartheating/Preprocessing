@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfigurat
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.ComponentScan;
 
-@ComponentScan(basePackages = {"de.smartheating.SmartHeatingCommons","de.smartheating.inputAdapter"})
+@ComponentScan(basePackages = {"de.smartheating.SmartHeatingCommons","de.smartheating.preprocessing"})
 @SpringBootApplication(exclude = { DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class })
 @EnableDiscoveryClient
 public class PreprocessingApplication {

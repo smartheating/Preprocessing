@@ -17,7 +17,7 @@ public class MessageConsumer {
 	PreprocessingService processingService;
 
 	public void consumeEvent(Event event) {
-		System.out.println("Consumed event with id: " + event.getId());
+		logger.info("Consumed event with id: " + event.getId());
 		processingService.processEvent(event);
 	}
 }
