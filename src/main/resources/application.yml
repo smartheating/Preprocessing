@@ -5,7 +5,7 @@ spring:
     active: "dev"
 
 server:
-  port: ${PORT:9015}
+  port: ${PORT:9014}
 
 ---
 spring:

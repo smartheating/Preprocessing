@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     image: preprocessing
     ports:
-      - 9015:9015
+      - 9014:9014
     container_name: preprocessing
     hostname: preprocessing
 
