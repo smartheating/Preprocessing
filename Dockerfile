@@ -6,4 +6,4 @@ RUN mvn clean install -DskipTests -q
 RUN git clone https://github.com/smartheating/Preprocessing.git /Preprocessing
 WORKDIR /Preprocessing
 RUN mvn clean install -DskipTests -q
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-Dspring.profiles.active=aws","-jar","/preprocessing.jar"]
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-Dspring.profiles.active=aws","-jar","/preprocessing-0.0.1-SNAPSHOT.jar"]
