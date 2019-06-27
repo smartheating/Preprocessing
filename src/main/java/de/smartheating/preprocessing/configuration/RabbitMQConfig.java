@@ -20,7 +20,7 @@ import de.smartheating.preprocessing.rabbitmq.MessageConsumer;
 public class RabbitMQConfig {
 
 	public final static String RABBITMQ_RECEIVING_QUEUE = "processing";
-	public final static String RABBITMQ_RECEIVING_EXCHANGE = "directexchange";
+	public final static String RABBITMQ_RECEIVING_EXCHANGE = "processing-exchange";
 	public final static String RABBITMQ_RECEIVING_ROUTINGKEY = "to.processing";
 	
 	public final static String RABBITMQ_SENDING_QUEUE = "planing";
